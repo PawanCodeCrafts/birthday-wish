@@ -1,0 +1,256 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100%;
+            height: 100vh;
+            background-color: #e3e3e3;
+            font-size: 16px;
+            overflow-x: hidden;
+            transition: background-color 1s ease;
+        }
+
+        /* ==========page1=========== */
+        .page1 {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #heading1 {
+            color: #8400ef;
+            font-weight: bold;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        #name-div {
+            border-radius: 10px;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            border: 1px solid #050624;
+            margin-bottom: 1rem;
+            width: 250px;
+            text-align: center;
+            background-color: #050624;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            transform: scale(1.05);
+            border-color: #8400ef;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #8400ef;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5a00b0;
+            transform: scale(1.05);
+        }
+
+        /* ==========page2=========== */
+        .page2 {
+            width: 100%;
+            height: 100vh;
+            display: none;
+            background-color: #fff0f8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 1s ease;
+        }
+
+        .cake-container {
+            position: relative;
+            width: 57%;
+            height: 400px;
+            margin: 60px auto;
+        }
+
+        h2 {
+            font-family: cursive;
+            color: brown;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .cake-layer {
+            position: absolute;
+            width: 200px;
+            height: 60px;
+            background-color: #fcdfa1;
+            box-shadow: 0px 0px 90px rgba(255, 0, 204, 0.263);
+            border: 1px solid rgba(111, 49, 49, 0.229);
+            border-radius: 10px;
+            left: 50%;
+            transition: transform 0.5s ease;
+        }
+
+        .bottom-layer {
+            bottom: 0;
+            width: 250px;
+            left: 31%;
+        }
+
+        .middle-layer {
+            bottom: 60px;
+            width: 200px;
+            left: 35%;
+        }
+
+        .top-layer {
+            bottom: 120px;
+            width: 150px;
+            left: 39%;
+        }
+
+        .top-frosting {
+            position: absolute;
+            width: 160px;
+            height: 20px;
+            background-color: hsl(0, 7%, 88%);
+            border-radius: 10px 10px 0 0;
+            bottom: 180px;
+            left: 38%;
+        }
+
+        .candle {
+            cursor: pointer;
+            position: absolute;
+            width: 10px;
+            height: 40px;
+            background-color: #fd3018;
+            border-radius: 2px 2px 0 0;
+            bottom: 200px;
+            left: 49%;
+            box-shadow: 0 0 15px rgba(255, 50, 50, 0.5);
+            transition: transform 0.3s ease-in, background-color 0.3s ease;
+        }
+
+        .candle:hover {
+            transform: scale(1.2);
+        }
+
+        .flame {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50% 50% 50% 0;
+            top: 25%;
+            left: 45%;
+            animation: flame-flicker 1s infinite alternate;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        @keyframes flame-flicker {
+            0% {
+                transform: scale(0.8) rotate(135deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(135deg);
+            }
+        }
+
+        .show-msg {
+            opacity: 1 !important;
+            font-weight: bolder;
+            color: magenta !important;
+            text-shadow: 0px 0px 20px hotpink;
+        }
+
+        .wait {
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            top: 100%;
+            left: 33%;
+            margin-top: 20px;
+        }
+
+        @media (max-width:767px) {
+            body {
+                /* display: flex;
+                justify-content: center;
+                align-items: center; */
+                overflow: scroll;
+            }
+
+            .page2 {
+                width: 100%;
+                height: 100vh;
+            }
+
+            .cake-container {
+                width: 100%;
+                margin: 20px 0px;
+            }
+
+            .bottom-layer {
+                left: 18%;
+            }
+
+            .middle-layer {
+                left: 25%;
+            }
+
+            .top-layer {
+                left: 32%;
+            }
+
+            .top-frosting {
+                left: 31%;
+            }
+
+            .candle {
+                left: 52%;
+            }
+
+            .flame {
+                top: 25%;
+                left: 45%;
+            }
+
+            .wait {
+                top: 110%;
+                left: 25%;
+                margin-top: 20px;
+            }
+
+            .page2 {
+                margin-top: 40px;
+            }
+
+        }
