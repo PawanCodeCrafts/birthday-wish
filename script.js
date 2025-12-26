@@ -59,17 +59,27 @@ candle.addEventListener('click', () => {
 
     setTimeout(() => {
         body.innerHTML = `
-    <h3 data-aos="zoom-in" style="text-align:center; color:lightblue; margin:20px;">
-        🌸✨ <span style="color:magenta; text-transform:uppercase; font-size:30px;"> ${userName} </span>, today the world feels a little brighter, a little more magical — because it’s your special day!
+   
+      <h3 data-aos="zoom-in" style="text-align:center; color:lightblue; margin:20px;">
+       Happy Birthday , My dear  🌸✨ <span style="color:magenta; text-transform:uppercase; font-size:30px;"> ${userName} </span>, today the world feels a little brighter, a little more magical — because it’s your special day!
         🎂💖 You’re the sparkle that makes ordinary moments shine 🌟 and the warmth that makes hearts smile 😊. May your
         path be lined with love 💕, laughter 😂, and dreams that bloom into reality 🌈. Keep shining like the star you
         are 🌠 — spreading kindness, joy, and positivity wherever you go! 🎁🎉💐
     </h3>
+   
     <br>
     <h2 data-aos="fade-up" style="text-align:center; color:magenta">
+        Waheguru g tenu hameshaaa khush rakhn!!!!
         Once Again, Happy birthday to you!
     </h2>
     `;
         AOS.refresh();
     }, 5000);
 });
+
+//  <h3 data-aos="zoom-in" style="text-align:center; color:lightblue; margin:20px;">
+//         🌸✨ <span style="color:magenta; text-transform:uppercase; font-size:30px;"> ${userName} </span>, today the world feels a little brighter, a little more magical — because it’s your special day!
+//         🎂💖 You’re the sparkle that makes ordinary moments shine 🌟 and the warmth that makes hearts smile 😊. May your
+//         path be lined with love 💕, laughter 😂, and dreams that bloom into reality 🌈. Keep shining like the star you
+//         are 🌠 — spreading kindness, joy, and positivity wherever you go! 🎁🎉💐
+//     </h3>
