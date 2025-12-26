@@ -69,7 +69,7 @@ candle.addEventListener('click', () => {
    
     <br>
     <h2 data-aos="fade-up" style="text-align:center; color:magenta">
-        Waheguru g tenu hameshaaa khush rakhn!!!!
+        Waheguru g tenu hameshaaa khush rakhn ❤!!!!
         Once Again, Happy birthday to you!
     </h2>
     `;
